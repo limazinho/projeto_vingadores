@@ -1,0 +1,189 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+html{
+     scroll-behavior: smooth;
+ }
+
+body {
+     font-family: sans-serif;
+     line-height: 1.5;
+}
+
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    padding: 1px 0 ;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+h2 {
+    margin-bottom: 32px;
+    border-left: #f13239 solid 4px;
+    padding-left: 8px;
+}
+
+.dark{
+    background-color: #111111;
+    color: #ebebeb;
+}
+
+.dark-link {
+    border-bottom: 1px solid;
+    color: #f13239;
+    transition: color 0.2s;
+}
+
+.dark-link:hover,
+.dark-link:focus {
+    border-bottom: 1px solid;
+    color: #ebebeb;
+}
+
+.text-center{
+    text-align: center;
+}
+
+header {
+    padding: 8px 24px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 24px;
+}
+
+header img {
+    width: 120px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+header a {
+    color: #ebebeb;
+    border-bottom: 1px solid;
+}
+
+header a:hover,
+header a:focus {
+    border-bottom: 1px solid;
+    color: #f13239;
+}
+
+.hero {
+    height: 320px;
+    padding: 24px;
+    
+    background-image: url(../imgs/banner.jpg);
+    background-size: cover;
+    background-position: center 0.1%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.hero h1 {
+    color: #ebebeb;
+    font-size: 40px;
+}
+
+.dots {
+    display: flex;
+    margin-top: 24px;
+}
+
+.dots button {
+
+    background-color: #ebebeb;
+    height: 8px;
+    width: 8px;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.dots button + button {
+    margin-left: 8px;
+}
+
+.gallery {
+    padding: 64px 24px 96px;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-row figure {
+    /* flex-grow / flex-shrink / flex-basis */
+    flex: 1 1 250px;
+}
+.gallery-row figure img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.gallery figure figcaption p {
+    font-weight: bold;
+}
+
+.history {
+    padding: 92px 24px 0;
+    border-top: #f13239 solid 2px;
+}
+
+.history .container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1200px;
+
+    border-bottom: #f13239 solid 1px;
+}
+
+.history .container .col {
+    flex: 1 1 350px;
+}
+
+.history img {
+    display: block;
+    width: 100%;
+}
+
+.history p {
+    line-height: 1.5;
+}
+
+.history p + p {
+    margin-top: 24px;
+}
+
+footer {
+    padding: 50px 24px;
+}
+
